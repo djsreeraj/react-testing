@@ -1,7 +1,7 @@
 function App() {
   return (
     <div className="App">
-     <p>Welcome to React Testing</p>
+     <p>Welcome to React testing</p>
     </div>
   );
 }
