@@ -16,3 +16,14 @@ test("title text in App", () => {
     expect(title).toBeInTheDocument()
 })
 
+test("Test input box", () => {
+    render(<App />)
+    let checkInput = screen.getByRole('textbox');
+    let checkInputPlaceHolder = screen.getByPlaceholderText('Enter username')
+    expect(checkInput).toBeInTheDocument()
+    expect(checkInputPlaceHolder).toBeInTheDocument()
+    expect(checkInput).toHaveAttribute('name',"userName")
+    expect(checkInput).toHaveAttribute('id', 'userId')
+    expect(checkInput).toHaveAttribute('type', 'text')
+})
+
