@@ -1,7 +1,4 @@
-import ContactPage from "./pages/ContactPage";
 import {
-  Routes,
-  Route,
   Link
 } from 'react-router-dom';
 
@@ -22,7 +19,7 @@ function App() {
               <Link to={`/`}>About</Link>
             </li>
           </ul>
-        </nav>
+      </nav>
      <br/>
      <br/>
 
